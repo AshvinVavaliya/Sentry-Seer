@@ -51,13 +51,6 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
         Text(text = "Hello $name!")
 
         Spacer(modifier = Modifier.height(16.dp))
-
-        Button(onClick = {
-            val willCrash: String? = null
-            val result = willCrash!!.length // Null crash on button click
-        }) {
-            Text("Trigger Null Crash")
-        }
     }
 }
 
